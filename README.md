@@ -1,103 +1,98 @@
 # Deep Learning with NumPy and PyTorch
 
-A collection of deep learning practice projects focused on understanding neural networks, convolutional neural networks, and model implementation using both low-level NumPy and PyTorch.
+A clean portfolio project for practicing neural networks, binary classification, and deep learning fundamentals using both a from-scratch NumPy implementation and a PyTorch implementation.
 
-This repository is organized as a portfolio-style learning project, showing practical work in deep learning fundamentals, computer vision, model training, and neural network implementation.
+The project focuses on understanding how a small neural network works internally: activation functions, forward propagation, binary cross-entropy loss, backpropagation, gradient descent, and model evaluation.
 
 ---
 
 ## Overview
 
-The goal of this repository is to demonstrate hands-on deep learning experience through practical implementations and experiments.
+This repository contains two versions of the same learning problem:
 
-The work focuses on:
+1. **NumPy MLP from scratch**  
+   A small two-layer neural network implemented manually using NumPy.
 
-- Neural network fundamentals
-- Forward and backward propagation
-- Convolutional neural networks
-- NumPy-based implementation practice
-- PyTorch model building
-- Computer vision workflows
-- Model training and evaluation
+2. **PyTorch MLP**  
+   The same idea implemented using PyTorch to compare a manual implementation with a modern deep learning framework.
+
+The goal is not to build the largest model, but to clearly understand the mechanics behind neural network training.
 
 ---
 
-## Main Topics
+## What This Project Demonstrates
 
-- Deep Learning
-- Machine Learning
-- Neural Networks
-- Convolutional Neural Networks
-- Computer Vision
-- NumPy
-- PyTorch
-- Model Training
+- Activation functions and derivatives
+- Forward propagation
+- Binary cross-entropy loss
 - Backpropagation
-- Classification
+- Gradient descent
+- Mini-batch style training logic
+- PyTorch model definition and training
+- Accuracy evaluation
+- Clean project organization
+- Basic testing of activation functions and model behavior
 
 ---
 
-## Planned Contents
+## Project Structure
 
-This repository may include cleaned and portfolio-ready notebooks such as:
-
-### CNN from Scratch with NumPy
-
-A low-level implementation-focused notebook exploring convolutional neural network operations using NumPy.
-
-Focus areas:
-
-- Convolution operations
-- Forward pass logic
-- Tensor shapes
-- Activation functions
-- Loss calculation
-- Backpropagation concepts
-
-### PyTorch CNN Practice
-
-A PyTorch-based notebook focused on building and training CNN models.
-
-Focus areas:
-
-- Dataset preparation
-- Model definition
-- Training loop
-- Loss functions
-- Optimizers
-- Evaluation
-- Accuracy tracking
-
-### Deep Learning Notes
-
-Cleaned notes explaining important deep learning concepts such as:
-
-- Neural network layers
-- Gradient flow
-- Backpropagation
-- CNN architecture
-- Model evaluation
+```text
+deep-learning-numpy-pytorch/
+│
+├── src/
+│   ├── activations.py
+│   ├── data.py
+│   ├── mlp_numpy.py
+│   └── mlp_torch.py
+│
+├── examples/
+│   └── run_experiment.py
+│
+├── tests/
+│   └── test_activations.py
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
 
 ---
 
-## Skills Demonstrated
+## Tech Stack
 
-- Python programming
-- NumPy-based numerical computing
-- PyTorch model development
-- Deep learning fundamentals
-- CNN implementation
-- Computer vision basics
-- Model training and evaluation
-- Debugging tensor shapes and model behavior
+**Language:** Python  
+**Core Libraries:** NumPy, PyTorch  
+**Optional Visualization:** Matplotlib  
+**Concepts:** Neural Networks, MLP, Backpropagation, Binary Classification, Deep Learning Fundamentals  
 
 ---
 
-## Privacy and Academic Integrity Notice
+## How to Run
 
-This repository contains cleaned portfolio-style work only. It does not include raw exam submissions, assignment prompts, grading materials, private course instructions, or confidential university material.
+Install the requirements:
 
-The purpose of this repository is to demonstrate learning, implementation ability, and practical understanding of deep learning concepts.
+```bash
+pip install -r requirements.txt
+```
+
+Run the example experiment:
+
+```bash
+python examples/run_experiment.py
+```
+
+Run the tests:
+
+```bash
+python -m pytest tests
+```
+
+---
+
+## Notes
+
+This repository is a cleaned portfolio-style project. It does not include raw exam submissions, assignment prompts, grading material, student identifiers, or private course files.
 
 ---
 
